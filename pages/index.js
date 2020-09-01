@@ -58,7 +58,7 @@ export default function Home({ newsfeed }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     const { data } = await axios.get(
       `https://rss.app/feeds/zazDfAYNsNdzm0CR.json`
